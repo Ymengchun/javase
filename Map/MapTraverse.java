@@ -15,17 +15,17 @@ public class MapTraverse {
 		map.put(5, "e");
 		
 		
-		//·½·¨Ò»£ºÍ¨¹ıMap.keySet()±éÀú
-		System.out.println("·½·¨Ò»£º");
-		Set<Integer> set = map.keySet();	//µÃµ½ËùÓĞkeyµÄ¼¯ºÏ
+		//æ–¹æ³•ä¸€ï¼šé€šè¿‡Map.keySet()éå†
+		System.out.println("æ–¹æ³•ä¸€ï¼š");
+		Set<Integer> set = map.keySet();	//å¾—åˆ°æ‰€æœ‰keyçš„é›†åˆ
 		for (Integer i : set) {
 			System.out.print(map.get(i) + " ");
 		}
 
 		
 		
-		//·½·¨¶ş£ºÍ¨¹ıMap.entrySetÊ¹ÓÃiterator±éÀú
-		System.out.println("·½·¨¶ş£º");
+		//æ–¹æ³•äºŒï¼šé€šè¿‡Map.entrySetä½¿ç”¨iteratoréå†
+		System.out.println("æ–¹æ³•äºŒï¼š");
 		Iterator<Map.Entry<Integer, String>> it = map.entrySet().iterator();
 		while (it.hasNext()) {
 			Map.Entry<Integer, String> entry = it.next();
@@ -34,15 +34,15 @@ public class MapTraverse {
 		
 		
 		
-		//·½·¨Èı£ºÍ¨¹ıMap.entrySet±éÀú£¨ÍÆ¼ö£©
-		System.out.println("·½·¨Èı£º");
-		for (Map.Entry<Integer, String> entry : map.entrySet()) {	//±éÀúËùÓĞ¼üÖµ¶ÔµÄ¼¯ºÏ
+		//æ–¹æ³•ä¸‰ï¼šé€šè¿‡Map.entrySetéå†ï¼ˆæ¨èï¼‰
+		System.out.println("æ–¹æ³•ä¸‰ï¼š");
+		for (Map.Entry<Integer, String> entry : map.entrySet()) {	//éå†æ‰€æœ‰é”®å€¼å¯¹çš„é›†åˆ
 			System.out.println("[" + entry.getKey() + "," + entry.getValue() +"]");
 		}
 		
 		
-		//·½·¨ËÄ£ºÍ¨¹ıMap.values()±éÀúËùÓĞµÄvalue£¬µ«²»ÄÜ±éÀúkey
-		System.out.println("·½·¨ËÄ£º");
+		//æ–¹æ³•å››ï¼šé€šè¿‡Map.values()éå†æ‰€æœ‰çš„valueï¼Œä½†ä¸èƒ½éå†key
+		System.out.println("æ–¹æ³•å››ï¼š");
 		for (String value : map.values()) {
 			System.out.println(value);
 		}
